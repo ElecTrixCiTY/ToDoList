@@ -1,0 +1,36 @@
+{% extends 'base/index.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1> Register Page </h1>
+</div>
+
+<div class="card-body">
+    
+    <form action="" method="post">
+    
+        {% csrf_token %}
+
+        <label> {{form.username.label}} </label>
+        {{form.username}}
+   
+         <label> {{form.password1.label}} </label>
+        {{form.password1}}
+
+        <label> {{form.password2.label}} </label>
+        {{form.password2}}
+
+
+
+        <input style="margin-top: 15px
+        ;" class="button" type="submit" value="Register">
+    
+    </form>
+    <p style="display: inline-block;">Already have an account? </p> <a style="margin-left: 5px;" href="{% url 'login' %}">Login</a>
+
+</div>
+
+
+
+
+{% endblock content %}
