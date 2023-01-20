@@ -1,0 +1,1 @@
+secret_code = 'django-insecure-b41-rf(m#(&40x#z2ra*17d*q_7kf3w+r8@kr49x285#k%sck$'
